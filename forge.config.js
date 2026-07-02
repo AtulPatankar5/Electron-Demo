@@ -44,4 +44,17 @@ module.exports = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'AtulPatankar5',
+          name: 'Electron-Demo'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };
