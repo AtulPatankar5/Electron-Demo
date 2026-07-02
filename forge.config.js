@@ -9,9 +9,7 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {
-        setupExe: 'MyElectronAppSetup.exe'
-      }
+      config: {}
     },
     {
       name: '@electron-forge/maker-zip',
@@ -43,17 +41,4 @@ module.exports = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
-  publishers: [
-    {
-      name: '@electron-forge/publisher-github',
-      config: {
-        repository: {
-          owner: 'AtulPatankar5',
-          name: 'Electron-Demo'
-        },
-        prerelease: false,
-        draft: true
-      }
-    }
-  ]
 };
