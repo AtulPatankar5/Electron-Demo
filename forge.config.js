@@ -9,11 +9,9 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      // config: {
-      //   certificateFile: './cert.pfx',
-      //   certificatePassword: process.env.CERTIFICATE_PASSWORD
-      // }
-      config: {}
+      config: {
+        setupExe: 'MyElectronAppSetup.exe'
+      }
     },
     {
       name: '@electron-forge/maker-zip',
